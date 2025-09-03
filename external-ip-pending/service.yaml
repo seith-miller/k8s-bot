@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-ils-service
+spec:
+  ports:
+    - name: http
+      port: 80
+      nodePort: 30062
+  selector:
+    app: nginx
+  type: LoadBalancer
