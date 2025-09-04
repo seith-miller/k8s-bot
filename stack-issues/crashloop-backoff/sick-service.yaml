@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: crashloop-service
+spec:
+  ports:
+    - name: http
+      port: 80
+  selector:
+    app: wrong-app-name
+  type: ClusterIP
