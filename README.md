@@ -1,1 +1,1 @@
-# kube-issues
+# k8s-bot
